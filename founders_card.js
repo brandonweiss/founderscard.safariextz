@@ -31,12 +31,22 @@ FoundersCard.validateCommand = function(event) {
   }
 }
 
+FoundersCard.removeProtocolAndOptionalSubdomain = function(string) {
+  if      (string.substring(0, 12) == "https://www.") { return string.substring(12) }
+  else if (string.substring(0, 11) == "http://www.")  { return string.substring(11) }
+  else if (string.substring(0, 8)  == "https://")     { return string.substring(8) }
+  else if (string.substring(0, 7)  == "http://")      { return string.substring(7) }
+  else                                                { return string }
+}
+
+FoundersCard.getHostname = function(string) {
+  var regex = new RegExp("^([^\/]+)", "im")
+  return string.match(regex)[1].toString()
+}
+
 FoundersCard.cleanBenefitURL = function(benefitURL) {
-  if      (benefitURL.substring(0, 12) == "https://www.") { return benefitURL.substring(12) }
-  else if (benefitURL.substring(0, 11) == "http://www.")  { return benefitURL.substring(11) }
-  else if (benefitURL.substring(0, 8)  == "https://")     { return benefitURL.substring(8) }
-  else if (benefitURL.substring(0, 7)  == "http://")      { return benefitURL.substring(7) }
-  else                                                    { return benefitURL }
+  var cleanedBenefitURL = FoundersCard.removeProtocolAndOptionalSubdomain(benefitURL)
+  return FoundersCard.getHostname(cleanedBenefitURL)
 }
 
 FoundersCard.downloadBenefits = function() {
