@@ -11,6 +11,18 @@ Just [download the extension](http://brandonweiss.me/founderscard) and open it o
 
 The extension adds a button to the Safari toolbar that will indicate if you have a benefit. If you go to a site without a benefit the button will be disabled. If you go to a site with a benefit, the button become clickable and show a little badge to get your attention. If you click it it will open up the benefits page so you can redeem your benefit.
 
+## Tests
+
+You'll need to have `node` and `npm` installed to run the tests.
+
+Install the dependencies.
+
+`npm install`
+
+Then run the tests.
+
+`npm test`
+
 ## Contributing
 
 1. Fork it

@@ -1,0 +1,24 @@
+{
+  "name": "founderscard.safariextension",
+  "version": "1.0.1",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brandonweiss/founderscard.safariextz.git"
+  },
+  "author": "Brandon Weiss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonweiss/founderscard.safariextz/issues"
+  },
+  "dependencies": {
+    "mocha"       : "~> 1.13.0",
+    "should"      : "~> 2.0.2",
+    "dom-storage" : "~> 1.0.2"
+  }
+}
