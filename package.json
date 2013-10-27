@@ -5,7 +5,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers coffee:coffee-script"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,9 @@
     "url": "https://github.com/brandonweiss/founderscard.safariextz/issues"
   },
   "dependencies": {
-    "mocha"       : "~> 1.13.0",
-    "should"      : "~> 2.0.2",
-    "dom-storage" : "~> 1.0.2"
+    "mocha"         : "~> 1.13.0",
+    "should"        : "~> 2.0.2",
+    "dom-storage"   : "~> 1.0.2",
+    "coffee-script" : "~> 1.6.3"
   }
 }
