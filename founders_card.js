@@ -1,4 +1,4 @@
-var FoundersCard = {}
+FoundersCard = {}
 
 FoundersCard.performCommand = function(event) {
   if (event.command === "founderscard") {
@@ -99,8 +99,3 @@ FoundersCard.rawBenefits = function(rawBenefits) {
     return localStorage["benefits"]
   }
 }
-
-safari.application.addEventListener("command",  FoundersCard.performCommand,  false)
-safari.application.addEventListener("validate", FoundersCard.validateCommand, false)
-
-FoundersCard.periodicallyDownloadBenefits()

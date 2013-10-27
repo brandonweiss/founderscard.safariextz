@@ -1,1 +1,8 @@
 <script src="founders_card.js"></script>
+
+<script type="text/javascript">
+  safari.application.addEventListener("command",  FoundersCard.performCommand,  false)
+  safari.application.addEventListener("validate", FoundersCard.validateCommand, false)
+
+  FoundersCard.periodicallyDownloadBenefits()
+</script>
