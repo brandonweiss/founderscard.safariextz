@@ -1,7 +1,7 @@
 FoundersCard Safari Extension
 =============================
 
-FoundersCard is an awesome product, but I regularly forget what benefits I get from it. Several times I've bought something only to realize after the fact that I had a benefit I could have used, which is incredibly annoying. FoundersCard has a Google Chrome extension, but no Safari extension, so I made one.
+[FoundersCard](https://founderscard.com/membership?code=FCBRAN430) is an awesome service, but I regularly forget what benefits I get from it. Several times I've bought something only to realize after the fact that I had a benefit I could have used, which is incredibly annoying. [FoundersCard](https://founderscard.com/membership?code=FCBRAN430) has a Google Chrome extension, but no Safari extension, so I made one.
 
 ## Installation
 
