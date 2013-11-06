@@ -15,10 +15,16 @@ FoundersCard.performCommand = function(event) {
 
 FoundersCard.validateCommand = function(event) {
   if (event.command === "founderscard") {
-    var currentURL      = event.target.browserWindow.activeTab.url
-    var cleanCurrentURL = FoundersCard.cleanBenefitURL(currentURL)
+    var currentURL = event.target.browserWindow.activeTab.url
 
-    var benefit = FoundersCard.findBenefitByURL(cleanCurrentURL)
+    if (currentURL === undefined || currentURL === "") {
+      event.target.disabled = true
+      event.target.badge    = 0
+      return false
+    }
+
+    var cleanCurrentURL = FoundersCard.cleanBenefitURL(currentURL)
+    var benefit         = FoundersCard.findBenefitByURL(cleanCurrentURL)
 
     if (benefit === undefined) {
       event.target.disabled = true
